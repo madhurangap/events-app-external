@@ -5,6 +5,7 @@
         <p>{{ description }}</p>
         <p>Location: {{ location }}</p>
         <p>Likes: {{ likes }}
+        <div class="row">
         <form method="POST" action="/event/like">
         <input type="hidden"  class="btn btn-info" value="{{id}}" name="id">
         <input type="submit" class="btn btn-success" value="Like">
@@ -13,6 +14,7 @@
         <input type="hidden" class="btn btn-info" value="{{id}}" name="id">
         <input type="submit" class="btn btn-danger" value="UN-Like">
         </form>
+        </div>
         </p>
     </li>
   {{/events}}
